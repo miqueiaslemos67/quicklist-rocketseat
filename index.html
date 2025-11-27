@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quicklist • Compras da semana</title>
+
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header container">
+        <a href="#" class="link-back" aria-label="Voltar">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M15 18l-6-6 6-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="link-back-text">Voltar</span>
+        </a>
+
+        <div class="brand">
+          <span class="brand-mark">
+            <img class="logo" src="logo.svg" alt="" srcset="" />
+          </span>
+          <span class="brand-name">quicklist</span>
+        </div>
+      </header>
+
+      <main class="container">
+        <h1 class="title">Compras da semana</h1>
+
+        <form class="add" autocomplete="off">
+          <label class="sr-only" for="new-item">Adicionar novo item</label>
+          <input
+            id="new-item"
+            name="item"
+            type="text"
+            placeholder="Adicione um novo item"
+            required
+            maxlength="80"
+          />
+          <button type="submit" class="btn">Adicionar item</button>
+        </form>
+
+        <ul class="list" aria-live="polite">
+          <li class="card">
+            <label class="check">
+              <input type="checkbox" />
+              <span class="box" aria-hidden="true"></span>
+            </label>
+            <span class="text">Pão de forma</span>
+            <button class="trash" type="button" aria-label="Remover item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 11.6667L20.5869 18.3501C20.4813 20.0576 20.4285 20.9114 20.0005 21.5253C19.7889 21.8287 19.5165 22.0849 19.2005 22.2773C18.5614 22.6667 17.706 22.6667 15.9951 22.6667C14.2821 22.6667 13.4255 22.6667 12.786 22.2766C12.4699 22.0838 12.1973 21.8272 11.9858 21.5232C11.5579 20.9084 11.5063 20.0534 11.4031 18.3435L11 11.6667"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 11.6667H22M18.7038 11.6667L18.2487 10.7278C17.9464 10.1042 17.7952 9.79236 17.5345 9.59788C17.4767 9.55474 17.4154 9.51637 17.3513 9.48314C17.0626 9.33334 16.7161 9.33334 16.023 9.33334C15.3125 9.33334 14.9573 9.33334 14.6638 9.48942C14.5987 9.52402 14.5367 9.56394 14.4782 9.60879C14.2144 9.81114 14.0671 10.1344 13.7724 10.7809L13.3686 11.6667"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M14.3334 19V15"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M17.6666 19V15"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </li>
+
+          <li class="card">
+            <label class="check">
+              <input type="checkbox" />
+              <span class="box" aria-hidden="true"></span>
+            </label>
+            <span class="text">Café preto</span>
+            <button class="trash" type="button" aria-label="Remover item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 11.6667L20.5869 18.3501C20.4813 20.0576 20.4285 20.9114 20.0005 21.5253C19.7889 21.8287 19.5165 22.0849 19.2005 22.2773C18.5614 22.6667 17.706 22.6667 15.9951 22.6667C14.2821 22.6667 13.4255 22.6667 12.786 22.2766C12.4699 22.0838 12.1973 21.8272 11.9858 21.5232C11.5579 20.9084 11.5063 20.0534 11.4031 18.3435L11 11.6667"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 11.6667H22M18.7038 11.6667L18.2487 10.7278C17.9464 10.1042 17.7952 9.79236 17.5345 9.59788C17.4767 9.55474 17.4154 9.51637 17.3513 9.48314C17.0626 9.33334 16.7161 9.33334 16.023 9.33334C15.3125 9.33334 14.9573 9.33334 14.6638 9.48942C14.5987 9.52402 14.5367 9.56394 14.4782 9.60879C14.2144 9.81114 14.0671 10.1344 13.7724 10.7809L13.3686 11.6667"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M14.3334 19V15"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M17.6666 19V15"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </li>
+
+          <li class="card">
+            <label class="check">
+              <input type="checkbox" />
+              <span class="box" aria-hidden="true"></span>
+            </label>
+            <span class="text">Suco de laranja</span>
+            <button class="trash" type="button" aria-label="Remover item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 11.6667L20.5869 18.3501C20.4813 20.0576 20.4285 20.9114 20.0005 21.5253C19.7889 21.8287 19.5165 22.0849 19.2005 22.2773C18.5614 22.6667 17.706 22.6667 15.9951 22.6667C14.2821 22.6667 13.4255 22.6667 12.786 22.2766C12.4699 22.0838 12.1973 21.8272 11.9858 21.5232C11.5579 20.9084 11.5063 20.0534 11.4031 18.3435L11 11.6667"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 11.6667H22M18.7038 11.6667L18.2487 10.7278C17.9464 10.1042 17.7952 9.79236 17.5345 9.59788C17.4767 9.55474 17.4154 9.51637 17.3513 9.48314C17.0626 9.33334 16.7161 9.33334 16.023 9.33334C15.3125 9.33334 14.9573 9.33334 14.6638 9.48942C14.5987 9.52402 14.5367 9.56394 14.4782 9.60879C14.2144 9.81114 14.0671 10.1344 13.7724 10.7809L13.3686 11.6667"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M14.3334 19V15"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M17.6666 19V15"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </li>
+
+          <li class="card">
+            <label class="check">
+              <input type="checkbox" />
+              <span class="box" aria-hidden="true"></span>
+            </label>
+            <span class="text">Bolacha</span>
+            <button class="trash" type="button" aria-label="Remover item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 11.6667L20.5869 18.3501C20.4813 20.0576 20.4285 20.9114 20.0005 21.5253C19.7889 21.8287 19.5165 22.0849 19.2005 22.2773C18.5614 22.6667 17.706 22.6667 15.9951 22.6667C14.2821 22.6667 13.4255 22.6667 12.786 22.2766C12.4699 22.0838 12.1973 21.8272 11.9858 21.5232C11.5579 20.9084 11.5063 20.0534 11.4031 18.3435L11 11.6667"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 11.6667H22M18.7038 11.6667L18.2487 10.7278C17.9464 10.1042 17.7952 9.79236 17.5345 9.59788C17.4767 9.55474 17.4154 9.51637 17.3513 9.48314C17.0626 9.33334 16.7161 9.33334 16.023 9.33334C15.3125 9.33334 14.9573 9.33334 14.6638 9.48942C14.5987 9.52402 14.5367 9.56394 14.4782 9.60879C14.2144 9.81114 14.0671 10.1344 13.7724 10.7809L13.3686 11.6667"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M14.3334 19V15"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M17.6666 19V15"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+        
+        <!-- Mensagem de erro/aviso -->
+        <div id="error-box" class="error hidden">
+          <div class="iconText">
+            <img src="icon.svg" alt="icon" srcset="">
+            <span id="error-text">O item foi removido da lista</span>
+          </div>
+          <button id="error-close" aria-label="Fechar mensagem">✕</button>
+        </div>
+      </div>
+      </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
